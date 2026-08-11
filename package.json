@@ -3,20 +3,45 @@
   "version": "1.0.0",
   "main": "index.ts",
   "dependencies": {
+    "@gorhom/bottom-sheet": "^5.2.14",
+    "@react-native-async-storage/async-storage": "2.2.0",
+    "@react-native-community/datetimepicker": "9.1.0",
+    "@react-native-community/slider": "5.2.0",
     "expo": "~57.0.12",
+    "expo-secure-store": "~57.0.1",
     "expo-status-bar": "~57.0.1",
+    "lucide-react-native": "^1.31.0",
     "react": "19.2.3",
-    "react-native": "0.86.2"
+    "react-dom": "19.2.3",
+    "react-native": "0.86.2",
+    "react-native-gesture-handler": "~2.32.0",
+    "react-native-reanimated": "4.5.1",
+    "react-native-safe-area-context": "~5.7.0",
+    "react-native-svg": "15.15.4",
+    "react-native-web": "^0.21.2",
+    "react-native-worklets": "0.10.1"
   },
   "devDependencies": {
+    "@storybook/addon-docs": "^10.5.4",
+    "@storybook/addon-ondevice-actions": "^10.4.7",
+    "@storybook/addon-ondevice-controls": "^10.4.7",
+    "@storybook/react-native": "^10.4.7",
+    "@storybook/react-native-web-vite": "^10.5.4",
     "@types/react": "~19.2.2",
-    "typescript": "~6.0.3"
+    "storybook": "^10.5.4",
+    "typescript": "~6.0.3",
+    "vite": "^7.2.4"
   },
   "scripts": {
     "start": "expo start",
     "android": "expo start --android",
     "ios": "expo start --ios",
-    "web": "expo start --web"
+    "web": "expo start --web",
+    "storybook": "storybook dev -p 6006",
+    "storybook:build": "storybook build",
+    "storybook:native": "STORYBOOK_ENABLED=true expo start",
+    "storybook:ios": "STORYBOOK_ENABLED=true expo start --ios",
+    "storybook:android": "STORYBOOK_ENABLED=true expo start --android"
   },
   "private": true
 }
